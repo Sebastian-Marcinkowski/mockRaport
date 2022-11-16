@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('drfapi/admin/', admin.site.urls),
+    path('drfapi/post', views.raportEndpoint),
 ]
